@@ -4,6 +4,8 @@
 /* layout */
 :root {
   --primary: #570ac3;
+  --accept: #31bd2f;
+  --reject: #c30a3b;
   --error: #e7195a;
 }
 body {
@@ -111,6 +113,13 @@ h3 {
   gap: 100px;
 }
 
+.admin {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
 .order-details {
   background: #fff;
   border-radius: 4px;
@@ -118,8 +127,32 @@ h3 {
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
 }
 
+.order-admin-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.order-admin-action button {
+  border: 0;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-accept {
+  background: var(--accept);
+}
+
+.btn-reject {
+  background: var(--reject);
+}
 .request-form {
   background: #fff;
   border-radius: 4px;
