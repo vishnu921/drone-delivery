@@ -35,8 +35,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      {user && user[0].isAdmin && <Admin />}
-      {user && !user[0].isAdmin && <RegularUser />}
+      {user && user[0].isAdmin && <Admin user={user[0]} />}
+      {user && !user[0].isAdmin && <RegularUser user={user[0]} />}
     </div>
   )
 }
