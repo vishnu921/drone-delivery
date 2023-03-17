@@ -22,7 +22,7 @@ const RegularUser = ({ user }) => {
       QuerySnapshot.forEach((doc) => {
         let currentOrder = {...doc.data()}
         if (currentOrder.email === user.email) {
-          currentOrder.createdAt = currentOrder.createdAt.toDate().toDateString()
+          if (currentOrder.createdAt) currentOrder.createdAt = currentOrder.createdAt.toDate().toDateString()
           orders.push({ ...currentOrder, id: doc.id });
         }
       });
