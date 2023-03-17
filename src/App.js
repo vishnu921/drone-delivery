@@ -12,12 +12,14 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar />
-    <Routes>
-      <Route exact path="/" element={user ? <Home /> : <Navigate to="/login" />} />
-      <Route exact path="/home" element={user ? <Home /> : <Navigate to="/login" />} />
-      <Route exact path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
-      <Route exact path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
-    </Routes>
+    <div className="main-body">
+      <Routes>
+        <Route exact path="/" element={user ? <Home /> : <Navigate to="/login" />} />
+        <Route exact path="/home" element={user ? <Home /> : <Navigate to="/login" />} />
+        <Route exact path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
+        <Route exact path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
+      </Routes>
+    </div>
   </BrowserRouter>
   );
 }

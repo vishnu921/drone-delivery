@@ -19,7 +19,7 @@ export const useSignup = () => {
       const user = response.user;
 
       const result = await addDoc(collection(db, "users"), { email: email, password: password, isAdmin: false, uid: user.uid })
-      console.log(result)
+      console.log("result: ", result)
 
       const json = response.user
       console.log(json)
