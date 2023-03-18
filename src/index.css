@@ -168,6 +168,15 @@ h3 {
   border-radius: 4px;
   padding: 20px;
   width: 100%;
+  max-height: 350px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.add-drone-form {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  width: 100%;
+  max-height: 350px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 

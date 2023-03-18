@@ -9,6 +9,7 @@ import { db } from "../firebaseConfig"
 import OrderDetails from "./orderDetails"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import DroneDetails from "./DroneDetails";
+import AddDroneForm from "./AddDroneForm";
 
 const Admin = ({ user }) => {
 
@@ -76,7 +77,7 @@ const Admin = ({ user }) => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-      
+      <AddDroneForm />
     </div>
   )
 }
