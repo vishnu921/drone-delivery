@@ -15,7 +15,7 @@ const RegularUser = ({ user }) => {
   useEffect(() => {
     const q = query(
       collection(db, "orders"),
-      orderBy("createdAt")
+      orderBy("createdAt", "desc")
     );
     const unsubscribe = onSnapshot(q, (QuerySnapshot) => {
       let orders = [];
@@ -38,7 +38,7 @@ const RegularUser = ({ user }) => {
         {orders && orders.map((order) => (
           <OrderDetails key={order.id} order={order} user={user}/>
         ))}
-        {!orders && <h1>! No Delivery Orders Yet !</h1>}
+        {orders.length === 0 && <h1>! No Delivery Orders Yet !</h1>}
       </div>
       <OrderForm user={user}/>
     </div>

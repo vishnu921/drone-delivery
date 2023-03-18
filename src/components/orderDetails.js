@@ -27,8 +27,8 @@ const OrderDetails = ({ order, user }) => {
         <p><strong>Order Time: </strong>{order.createdAt}</p>
       </div>
       {user.isAdmin && order.status === "requested" && <div className='order-admin-action'>
-        <button class='btn-accept' onClick={handleAccept}>Accept</button>
-        <button class='btn-reject' onClick={handleReject}>Reject</button>
+        <button className='btn-accept' onClick={handleAccept}>Accept</button>
+        <button className='btn-reject' onClick={handleReject}>Reject</button>
       </div>}
     </div>
   )

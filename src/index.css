@@ -19,7 +19,7 @@ header {
 header .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,19 +31,19 @@ header a {
 
 .main-body {
   max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
+  padding: 20px !important;
+  margin: 0 auto !important;
 }
 
 /* form */
 label, input {
-  display: block;
+  display: block !important;
 }
 input {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 100%;
+  padding: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  width: 100% !important;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ form button {
   background: var(--primary);
   border: 0;
   color: #fff;
-  padding: 10px;
+  padding: 10px !important;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
@@ -63,7 +63,7 @@ div.error {
   border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
 
 input.error {
@@ -76,7 +76,7 @@ nav {
   align-items: center;
 }
 nav a {
-  margin-left: 10px;
+  margin-left: 10px !important;
 }
 nav button {
   background: #fff;
@@ -92,17 +92,17 @@ nav button {
 
 /* auth forms */
 form.signup, form.login {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 400px !important;
+  margin: 40px auto !important;
+  padding: 20px !important;
   background: #fff;
   border-radius: 4px;
 }
 
 h3 {
   font-weight: 500 !important;
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: center !important;
+  margin-bottom: 30px !important;
   color: var(--primary);
 }
 
@@ -125,6 +125,16 @@ h3 {
   border-radius: 4px;
   margin: 15px auto;
   padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+}
+.drone-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 15px auto;
+  padding: 20px 40px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
   display: flex;
@@ -161,14 +171,20 @@ h3 {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 
-.orders h2 {
-  font-weight: 600;
+h2 {
+  font-weight: 600 !important;
   margin: 0 0 10px 0;
   font-size: 1.2em;
   color: var(--primary);
 }
 
 .order-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.drone-details p {
   margin: 0;
   font-size: 0.9em;
   color: #555;
