@@ -198,3 +198,8 @@ h2 {
   font-size: 0.9em;
   color: #555;
 }
+
+#logo {
+  width: 70px;
+  height: 70px;
+}
